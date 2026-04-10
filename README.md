@@ -1,81 +1,110 @@
-# 📝 Task Manager App (Django + React + Docker)
+# 📝 Task Manager App  
+### Django + React + Docker
 
-A full-stack Task Manager web application built using:
-
-- Backend: Django + Django REST Framework
-- Frontend: React (Vite)
-- Database: SQLite / PostgreSQL (Docker optional)
-- Containerization: Docker + Docker Compose
+A full-stack task management application built with **Django REST Framework** for the backend, **React (Vite)** for the frontend, and **Docker** for containerization.
 
 ---
 
-# 🚀 Features
+## 🚀 Features
 
-- Add tasks
-- Edit tasks
-- Delete tasks
-- Mark tasks as completed/incomplete
-- Persistent storage
-- REST API backend
-- Responsive React UI
-
----
-
-# 🧱 Project Structure
-
-project-root/
-│
-├── frontend/ # React app
-├── project/ # Django backend
-├── docker-compose.yaml
-├── requirements.txt
-├── README.md
-└── .gitignore
-
+✔ Create tasks  
+✔ Edit tasks  
+✔ Delete tasks  
+✔ Mark tasks as completed / incomplete  
+✔ Persistent storage  
+✔ REST API backend  
+✔ Responsive and clean UI  
 
 ---
 
-# ⚙️ Setup Instructions
+## 🧱 Project Structure
 
-## 🔹 1. Clone repo
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-
-🔹 2. Run using Docker (Recommended)
-docker-compose up --build
-
-🌐 Access App
-Frontend: http://localhost:3000
-Backend API: http://localhost:8000/api/
-
-🔧 Manual Setup (Optional)
-Backend
-cd project
-pip install -r requirements.txt
-python manage.py runserver
-
-Frontend
-cd frontend
-npm install
-npm run dev
-
-📡 API Endpoints
-Method	Endpoint	Description
-GET	/api/tasks/	Get all tasks
-POST	/api/tasks/	Create task
-PUT	/api/tasks/:id	Update task
-DELETE	/api/tasks/:id	Delete task
-
-🐳 Docker Services
-backend (Django API)
-frontend (React UI)
-db (optional PostgreSQL)
-
-👨‍💻 Author
-
-Aditya Kaintura
-
+project-root/  
+frontend/ (React Vite App)  
+backend/ (Django REST API)  
+docker-compose.yml  
+requirements.txt  
+README.md  
 
 ---
 
+## ⚙️ Tech Stack
+
+**Frontend:** React (Vite), Axios, CSS  
+**Backend:** Django, Django REST Framework  
+**Database:** SQLite / PostgreSQL  
+**DevOps:** Docker, Docker Compose  
+
+---
+
+## 🐳 Run with Docker (Recommended)
+
+### Step 1: Build and Start Containers
+docker-compose up --build  
+
+### Step 2: Stop Containers
+docker-compose down  
+
+---
+
+## 🌐 Access Application
+
+Frontend → http://localhost:3000  
+Backend → http://localhost:8000/api/  
+
+---
+
+## 🔧 Manual Setup (Without Docker)
+
+### Backend Setup
+cd backend  
+pip install -r requirements.txt  
+python manage.py makemigrations  
+python manage.py migrate  
+python manage.py runserver  
+
+---
+
+### Frontend Setup
+cd frontend  
+npm install  
+npm run dev  
+
+---
+
+## 📡 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /api/tasks/ | Fetch all tasks |
+| POST | /api/tasks/ | Create new task |
+| PUT | /api/tasks/<id>/ | Update task |
+| DELETE | /api/tasks/<id>/ | Delete task |
+
+---
+
+## 📌 Future Improvements
+
+- 🔐 JWT Authentication  
+- 📅 Due dates & reminders  
+- 🎯 Drag & drop Kanban board  
+- ⚡ Redis caching  
+- ☁️ Cloud deployment (Render / Vercel / AWS)  
+
+---
+
+## 🐳 Docker Services
+
+- **backend** → Django API  
+- **frontend** → React UI  
+- **db** → PostgreSQL (optional)  
+
+---
+
+## 👨‍💻 Author
+
+**Aditya Kaintura**
+
+---
+
+⭐ If you like this project, give it a star!
