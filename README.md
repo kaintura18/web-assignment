@@ -16,6 +16,10 @@ A full-stack task management application built with **Django REST Framework** fo
 ✔ Responsive and clean UI  
 
 ---
+## 🌐 Screenshot
+
+<img width="1772" height="928" alt="image" src="https://github.com/user-attachments/assets/e465d7a8-e7d5-42b5-b759-6ab0d562c2be" />
+
 
 ## 🧱 Project Structure
 
